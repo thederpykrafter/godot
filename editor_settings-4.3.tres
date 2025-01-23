@@ -1,10 +1,20 @@
-[gd_resource type="EditorSettings" format=3]
+[gd_resource type="EditorSettings" load_steps=2 format=3]
+
+[sub_resource type="InputEventKey" id="InputEventKey_8h4bb"]
+device = -1
+ctrl_pressed = true
+physical_keycode = 82
+unicode = 114
 
 [resource]
 interface/editor/single_window_mode = true
 interface/theme/base_color = Color(0.21, 0.24, 0.29, 1)
 interface/theme/accent_color = Color(0.44, 0.73, 0.98, 1)
 interface/theme/contrast = 0.3
+filesystem/external_programs/3d_model_editor = "blender"
+filesystem/external_programs/terminal_emulator = "alacritty"
+filesystem/external_programs/terminal_emulator_flags = "--working-directory {directory}"
+filesystem/file_dialog/show_hidden_files = true
 text_editor/theme/highlighting/symbol_color = Color(0.67, 0.79, 1, 1)
 text_editor/theme/highlighting/keyword_color = Color(1, 0.44, 0.52, 1)
 text_editor/theme/highlighting/control_flow_keyword_color = Color(1, 0.55, 0.8, 1)
@@ -136,6 +146,14 @@ editors/3d_gizmos/gizmo_colors/lightprobe_lines = Color(0.5, 0.6, 1, 1)
 editors/3d_gizmos/gizmo_colors/joint_body_a = Color(0.6, 0.8, 1, 1)
 editors/3d_gizmos/gizmo_colors/joint_body_b = Color(0.6, 0.9, 1, 1)
 editors/3d_gizmos/gizmo_colors/fog_volume = Color(0.5, 0.7, 1, 1)
+shortcuts = [{
+"name": "animation_player_editor/rename_animation",
+"shortcuts": [SubResource("InputEventKey_8h4bb")]
+}, {
+"name": "script_text_editor/replace",
+"shortcuts": []
+}]
 metadata/script_setup_templates_dictionary = {
+"MeshInstance3D": "0NodeDefault",
 "Node3D": "0NodeDefault"
 }
