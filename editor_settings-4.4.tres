@@ -35,11 +35,12 @@ _default_feature_profile = ""
 _use_favorites_root_selection = false
 network/debug_adapter/request_timeout = 1000
 editors/grid_map/editor_side = 1
-_editor_settings_advanced_mode = false
+_editor_settings_advanced_mode = true
 _project_settings_advanced_mode = false
 _export_template_download_directory = ""
 _script_setup_templates_dictionary = {}
 _script_setup_use_script_templates = false
+network/debug_adapter/sync_breakpoints = true
 shortcuts = [{
 "name": "animation_player_editor/rename_animation",
 "shortcuts": [SubResource("InputEventKey_8h4bb")]
